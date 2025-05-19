@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: tkn-1
   name: hello-world-nginx
   annotations: {}
 spec:
