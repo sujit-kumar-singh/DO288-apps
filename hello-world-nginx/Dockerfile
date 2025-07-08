@@ -1,4 +1,7 @@
-FROM registry.access.redhat.com/ubi8:8.0
+# FROM registry.access.redhat.com/ubi8:8.0
+FROM registry.redhat.io/ubi9/ubi:9.6
+
+# Use of Ubi9.6 to ensure that there are lesser vulnerabilities caputured in the Trivy scan
 
 RUN yum install -y --disableplugin=subscription-manager --nodocs nginx \
   && yum clean all
